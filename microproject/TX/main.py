@@ -5,11 +5,11 @@ from b2bin import b2bin
 import serial
 from sync import filestart
 from sync import filend
-
+duration=0.1
 arduino = serial.Serial('/dev/ttyACM0', 9600)
 image = open('t.txt', 'rb') #open binary file in read mode
 image_read = image.read()
-image_64_encode = base64.encodestring(image_read)
+image_64_encode = base64.b64encode(image_read)
 a=np.array(list(image_64_encode))
 
 print "synchronising",
@@ -17,7 +17,7 @@ for i in range(0,6):
 		print ".",
 		time.sleep(0.1)
 
-#filestart(arduino)
+filestart(arduino)
 
 print "transfer process started!"
 for i in range(len(a)):
@@ -31,7 +31,7 @@ for i in range(len(a)):
 			arduino.write('H') 
 		elif bin[x]=='0':
 			arduino.write('L')
-		time.sleep(0.1)
+		time.sleep(duration)
 
 print "\nsending the end of file signal!"
 filend(arduino)
