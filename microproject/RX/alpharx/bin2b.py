@@ -1,5 +1,5 @@
 import time
-def bin2b(*x):
+def bin2b(x):
 	return{
 	 "000000":'A',
 	 "000001":'B',

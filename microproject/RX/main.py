@@ -24,7 +24,7 @@ while True:
 		time.sleep(1)
 		while True:
 			if len(a)==8
-				b64=bin2b(a)
+				b64=bin2b(''.join(a))
 				b.append(b64)
 				for u in range(0,8)
 					del a[u]
