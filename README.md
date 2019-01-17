@@ -1,4 +1,4 @@
-# projectLI-FI
+# projectOpenLi-Fi
 
 An attempt to transfer useful data by varying the intensity of visible light using a cheap microcontroller and a singlecell Solarpanel.
 
@@ -10,7 +10,7 @@ Clone this repository by typing
 1. Two computers running python 2.7 with pyserial and numpy modules installed
 2. Two arduino,Two arduino serial cable
 3. One LED light ,1K ohm resistor
-4. One Solar Panel
+4. One Solar Panel / Photo resistor , 1K Ohm resistor
 
 ## STEP 1 : 
 Upload the ino files inside alpharx and alphatx into corresponding receiving and transmitting arduino boards
