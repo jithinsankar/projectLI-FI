@@ -1,4 +1,4 @@
-# projectOpenLi-Fi
+# project OpenLi-Fi
 
 An attempt to transfer useful data by varying the intensity of visible light using a cheap microcontroller and a singlecell Solarpanel.
 
