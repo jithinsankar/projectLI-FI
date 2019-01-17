@@ -18,6 +18,7 @@ Copy the alpharx folder to receiver computer and alphax to transmitting computer
 
 ## STEP 2 : 
 Arrange the components as shown.
+![alt text](/Diagram.png)
 
 ## STEP 3:
 Direct the file to be sent by editing the 9th line of alphatx/main.py
